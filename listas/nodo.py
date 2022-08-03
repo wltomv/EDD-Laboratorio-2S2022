@@ -13,3 +13,9 @@ class Nodo_doble(Nodo):
     def __init__(self, info):
         super().__init__(info)
         self.anterior = None
+
+
+class Nodo_ll(Nodo):
+    def __init__(self, info):
+        super().__init__(info)
+        self.hijo = None
