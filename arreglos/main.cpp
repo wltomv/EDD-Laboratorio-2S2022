@@ -1,7 +1,7 @@
 
 #include <iostream>
-#include "ordenamientos.cpp"
-#include "busquedas.cpp"
+#include "ordenamientos.hpp"
+#include "busquedas.hpp"
 using namespace std;
 
 int main()

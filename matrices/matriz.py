@@ -73,14 +73,31 @@ class Matriz:
     def insertarNodo(self, x, y, info):
         nuevo = Nodo_matriz(x, y, info)
 
-        columna = self.buscarColumna(y)
         fila = self.buscarFila(x)
+        columna = self.buscarColumna(y)
+        
 
         # caso 1: columna y fila no existe
         if columna is None and fila is None:
-            columna = self.crearColumna(y)
             fila = self.crearFila(x)
+            columna = self.crearColumna(y)
+           
 
+            nuevo = self.insertarEnFila(nuevo, fila)
+            nuevo = self.insertarEnColumna(nuevo, columna)
+        # Caso 2: la fila existe y la columna no existe
+        elif fila is not None and columna is None:
+            columna = self.crearColumna(y)
+            nuevo = self.insertarEnFila(nuevo, fila)
+            nuevo = self.insertarEnColumna(nuevo, columna)
+
+        # Caso 3: la columna existe y la fila no existe
+        elif fila is None and columna is not None:
+            fila = self.crearFila(x)
+            nuevo = self.insertarEnFila(nuevo, fila)
+            nuevo = self.insertarEnColumna(nuevo, columna)
+        # Caso 4: la columna y la fila existen
+        else:
             nuevo = self.insertarEnFila(nuevo, fila)
             nuevo = self.insertarEnColumna(nuevo, columna)
 
