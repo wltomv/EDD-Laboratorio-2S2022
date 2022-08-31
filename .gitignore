@@ -11,8 +11,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
+
 
 # Distribution / packaging
 .Python
@@ -22,7 +21,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -54,5 +52,9 @@ pip-delete-this-directory.txt
 .vscode
 
 #files
+configurations.txt
 matrices/graficador.py
+
+# C++ FILES
+
 

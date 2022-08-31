@@ -1,0 +1,2 @@
+# Error de asio.hpp en linux
+    sudo apt install --no-install-recommends libasio-dev 

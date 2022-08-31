@@ -1,0 +1,4 @@
+
+swig -python -c++ simple.i 
+g++ -c -fpic simple_wrap.cxx -I/usr/include/python3.8
+g++ -shared simple_wrap.o -o _simple.so
