@@ -1,7 +1,7 @@
 #ifndef _NODOB_HH_
 #define _NODOB_HH_
 
-// Declaración en avanzada de la clase ClassB
+// Declaración en avanzada de la clase Pagina
 class Pagina;
 class NodoB
 {
