@@ -56,5 +56,7 @@ configurations.txt
 matrices/graficador.py
 
 # C++ FILES
+*/output
+*.o
 
 
