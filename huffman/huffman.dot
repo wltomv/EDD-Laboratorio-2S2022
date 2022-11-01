@@ -1,0 +1,37 @@
+digraph grafica{
+ rankdir=TB;
+node [shape = record, style=filled, fillcolor=lavender];
+nodo4404429440 [ label ="<C0>|80|<C1>"];
+nodo4404429872 [ label ="<C0>|32|<C1>"];
+nodo4403224480 [ label ="15"];
+nodo4404429872:C0->nodo4403224480
+nodo4404431264 [ label ="<C0>|17|<C1>"];
+nodo4403560608 [ label ="8"];
+nodo4404431264:C0->nodo4403560608
+nodo4403557760 [ label ="<C0>|9|<C1>"];
+nodo4403560992 [ label ="4"];
+nodo4403557760:C0->nodo4403560992
+nodo4403561184 [ label ="5"];
+nodo4403557760:C1->nodo4403561184
+nodo4404431264:C1->nodo4403557760
+nodo4404429872:C1->nodo4404431264
+nodo4404429440:C0->nodo4404429872
+nodo4404429728 [ label ="<C0>|48|<C1>"];
+nodo4404431024 [ label ="<C0>|21|<C1>"];
+nodo4403560560 [ label ="10"];
+nodo4404431024:C0->nodo4403560560
+nodo4403564304 [ label ="11"];
+nodo4404431024:C1->nodo4403564304
+nodo4404429728:C0->nodo4404431024
+nodo4404429968 [ label ="<C0>|27|<C1>"];
+nodo4403556992 [ label ="<C0>|13|<C1>"];
+nodo4403564352 [ label ="6"];
+nodo4403556992:C0->nodo4403564352
+nodo4403560800 [ label ="7"];
+nodo4403556992:C1->nodo4403560800
+nodo4404429968:C0->nodo4403556992
+nodo4403224240 [ label ="14"];
+nodo4404429968:C1->nodo4403224240
+nodo4404429728:C1->nodo4404429968
+nodo4404429440:C1->nodo4404429728
+}
